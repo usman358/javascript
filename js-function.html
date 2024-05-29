@@ -23,6 +23,21 @@
       }
       const valuation = time(10, 10);
       document.getElementById("d").innerHTML = valuation;
+//anonymous function//
+let x = function () {  
+   x=10+5;
+   //console.log(x);
+} 
+x();
+
+
+//used as variable values//
+let text = "The temperature is " + toCelsius(77) + " Celsius.";
+document.getElementById("demo").innerHTML = text;
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
     </script>
 
     <!----understanding--
