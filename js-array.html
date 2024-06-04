@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Arrays</h1>
+    <p id="demo"></p>
+    <p id="demoo"></p>
+    <script>
+      const cars = ["Saab", "Volvo", "BMW"];
+      document.getElementById("demo").innerHTML = cars;
+    </script>
+    <script>
+      const carrs = new Array("Saab", "Volvo", "BMW");
+      document.getElementById("demo").innerHTML = carrs;
+
+      //to check the number of elements  
+      const person = ["John", "Doe", 46];
+      document.getElementById("demoo").innerHTML = person[(1, 2)];
+      //bracket indexing
+      const cars = ["Saab", "Volvo", "BMW"];
+      cars[2] = "Opel";
+      document.getElementById("demo").innerHTML = cars;
+    </script>
+  </body>
+</html>

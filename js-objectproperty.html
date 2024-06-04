@@ -21,6 +21,63 @@
           },
         };
         console.log(person.person1);
+
+        const truck = {};
+
+        (truck.speed = 100), (truck.model = "volvo");
+        console.log(truck.speed);
+
+        let personal = {
+          fname: "usman",
+          lname: "khalid",
+          fllname: function () {
+            return this.fname + this.lname;
+          },
+        };
+        console.log(personal.fllname());
+
+        const bus = {
+          reg_no: 123,
+          comp: "daewoo",
+          capacity: function () {
+            return this.reg_no + this.comp;
+          },
+        };
+        console.log(bus.reg_no + bus.capacity());
+
+        const vehicle = {};
+        {
+          (vehicle.engine = "3000"),
+            (vehicle.color = "red"),
+            (vehicle.type = "bus");
+          vehicle.spec = function () {
+            return this.color + this.type;
+          };
+        }
+        console.log("enginesize" + vehicle.spec() + vehicle.color);
+
+        vehicle.type = "car";
+        //new objects
+        // Create an Object
+
+        ///////////////////////////////////new object()
+        const pers = new Object();
+
+        // Add Properties
+        pers.firstName = "John";
+        pers.lastName = "Doe";
+        pers.age = 50;
+        pers.eyeColor = "blue";
+
+        ///The examples above do exactly the same.
+
+        // But, there is no need to use new Object().
+
+        //For readability, simplicity and execution speed, use the object literal method.
+
+        const x = pers;
+        x.age = 30;
+        console.log(pers.firstName + pers.lastName + pers.age);
       </script>
     </body>
   </html>

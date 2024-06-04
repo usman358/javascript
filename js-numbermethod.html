@@ -1,0 +1,32 @@
+<!----toString()	Returns a number as a string
+toExponential()	Returns a number written in exponential notation
+toFixed()	Returns a number written with a number of decimals
+toPrecision()	Returns a number written with a specified length
+valueOf()	Returns a number as a number--->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Number Methods</h2>
+    <p>The toString() method converts a number to a string.</p>
+
+    <p id="demo"></p>
+    <script>
+      let x = 123;
+      document.getElementById("demo").innerHTML =
+        x.toString() +
+        "<br>" +
+        (123).toString() +
+        "<br>" +
+        (100 + 23).toString();
+      let x = 9.656;
+      document.getElementById("demo").innerHTML =
+        x.toExponential() +
+        "<br>" +
+        x.toExponential(2) +
+        "<br>" +
+        x.toExponential(4) +
+        "<br>" +
+        x.toExponential(6);
+    </script>
+  </body>
+</html>

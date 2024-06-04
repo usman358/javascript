@@ -12,11 +12,24 @@
         name: "John",
         age: 30,
         city: "New York",
-        
+
       };
 
       // Display Object
       document.getElementById("demo").innerHTML = person;
+
+      //Create an Object to make an array and call
+const personn = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Create an Array
+const myArray = Object.values(personn);
+
+// Display the Array
+document.getElementById("demo").innerHTML = myArray;
     </script>
   </body>
 </html>
