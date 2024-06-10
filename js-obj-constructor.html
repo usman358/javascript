@@ -2,7 +2,6 @@
 <html>
   <body>
     <h1>JavaScript Object Constructors</h1>
-
     <p id="demo"></p>
 
     <script>
@@ -12,15 +11,19 @@
         this.lastName = last;
         this.age = age;
         this.eyeColor = eye;
-
+        this.eyeColor = Person;
       }
-
       // Create a Person object
       const myFather = new Person("John", "Doe", 50, "blue");
       const myMother = new Person("ff", "good", 9, "fff");
+      const myMotherrr = new Person("ff", "good", 9, "aaa");
+      const myMotherr = new Person("rt", "good", 9, "typ");
+      const myson = new Person("rt", "good", 9, "typ");
+      const mydaug = new Person("rt", "bad", 8, "ret");
+      const My = AbortSignal("dt", "yt", 8, "ter");
       // Display age
       document.getElementById("demo").innerHTML =
-        "My mom is " + myFather.age + "," + myMother.lastName ;
+        "My mom is " + myFather.age + "," + myMother.lastName;
     </script>
   </body>
 </html>
